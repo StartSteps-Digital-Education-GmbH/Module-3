@@ -1,3 +1,4 @@
+import { AbstractBook } from './AbstractBook';
 import {DigitalBook} from './DigitalBook'
 import { AudioBookDetails, DigitalBookDetails } from './Types';
 
@@ -33,14 +34,12 @@ export class AudioBook extends DigitalBook {
 
     // Override the getBookDetails() method to include the narrator and duration in the details.
     getBookDetails(): AudioBookDetails {
-        // Get book details from super class
-        const details = super.getBookDetails()
-        // return bookdetails with duration and narrator
+        const bookDetails = super.getBookDetails();
         return {
-            ...details,
-            duration: this._duration,
-            narrator: this._narrator
-        }
+            ...bookDetails,
+            duration: this.duration,
+            narrator: this.narrator
+        };
     }
 }
 
