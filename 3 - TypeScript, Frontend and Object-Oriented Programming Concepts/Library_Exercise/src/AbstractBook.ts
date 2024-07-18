@@ -1,6 +1,6 @@
 import { BookDetails, Genre } from "./Types";
 
-abstract class AbstractBook {
+export abstract class AbstractBook {
     // common fields
     private _title: string;
     private _author: string;
