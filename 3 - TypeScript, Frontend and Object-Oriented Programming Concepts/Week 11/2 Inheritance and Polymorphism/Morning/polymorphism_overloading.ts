@@ -7,7 +7,7 @@ class MathOperation {
         if (b) {
             return a + b;
         }
-        return a + b;
+        return a;
     }
 }
 
