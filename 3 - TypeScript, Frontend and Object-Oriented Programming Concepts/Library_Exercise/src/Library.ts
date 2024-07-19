@@ -1,5 +1,5 @@
 
-import { BookDetails, DigitalBookFormat, LibraryDetails} from './Types';
+import { AudioBookDetails, BookDetails, DigitalBookDetails, DigitalBookFormat, LibraryDetails} from './Types';
 import { Book } from './Book';
 import { DigitalBook } from './DigitalBook';
 import { AudioBook } from './AudioBook';
@@ -16,10 +16,45 @@ export class Library {
         this.books = [];
     }
 
-    // Method to add a book to the library
-    addBook(book: Book): void {
-        this.books.push(book);
+    // --> Add book receives:
+    // 1. Book object
+    // 2. Digital Book details Object
+    // 3. AudioBookDetails object
+
+    // Add Book function signatures
+    addBook(book: Book): void;                      //done
+    addBook(details: BookDetails): void;            // done
+    addBook(details: DigitalBookDetails): void;     // done
+    addBook(details: AudioBookDetails): void;       // done
+
+    // Actual implementation of Addbook
+    addBook(bookOrDetails: Book | BookDetails | DigitalBookDetails | AudioBookDetails): void {
+        // Book object is ready to push
+        // Details --> book object still needs to instantiated (3 options)
+        // DigitalBookDetails & AudioBookDetails contain format  
+
+        if(bookOrDetails instanceof Book){
+            this.books.push(bookOrDetails)
+        } else if ('format' in bookOrDetails) { // DigitalBOokdetails and Audiobookdetails both have format
+            if (bookOrDetails.format === 'AUDIO') {
+                // bookOrDetails is AudioBookDetails
+                this.books.push(new AudioBook(<AudioBookDetails>bookOrDetails))
+            } else {
+                // bookOrDetails is DigitalBookDetails
+                this.books.push(new DigitalBook(<DigitalBookDetails>bookOrDetails))
+            }
+        } else {
+            // bookOrDetails is BookDetails
+            this.books.push(new Book(bookOrDetails))
+        }
     }
+
+
+
+    // // Old Addbook method
+    // addBook(book: Book): void {
+    //     this.books.push(book);
+    // }
 
     // Method to remove a book from the library by title
     removeBook(title: string): void {
@@ -69,3 +104,17 @@ const audioBook1 = new AudioBook({ title: 'AUDIOBOOK', author: 'Yuval Noah Harar
 library.addBook(audioBook1)
 console.log(library.getBooks())
 
+
+
+
+
+// Example of usage after updates are made:
+console.log('\nTesting Overloaded AddBook Method')
+library.addBook(new Book({ title: '1984', author: 'George Orwell', publishedYear: 1949, genre: 'Fiction' })); 
+library.addBook({ title: 'Digital Fortress', author: 'Dan Brown', publishedYear: 1998, genre: 'Fiction' , format: DigitalBookFormat.EPUB, fileSize: 5});
+library.addBook({ title: 'The Alchemist', author: 'Paulo Coelho', publishedYear: 1988, genre: 'Fiction', format: DigitalBookFormat.AUDIO, fileSize: 300, duration: 240, narrator: 'Jeremy Irons'});
+console.log(library.getBooks())
+// --> Add book receives:
+// 1. Book object
+// 2. Digital Book details Object
+// 3. AudioBookDetails object
