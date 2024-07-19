@@ -1,14 +1,38 @@
-abstract class Employee {
-    protected name: string;
+interface IEmployee {
+    name: string;
+    getName(): void;
+}
+
+interface ParentTow {
+    salary: number;
+}
+
+interface Child extends IEmployee, ParentTow {
+//Multiple  Inhertance Supported by interface but not abstruct class
+}
+
+class Test implements IEmployee {
+    name: string = "asdasd";
+    getName(){
+
+    }
+}
+
+abstract class Employee implements IEmployee {
+     name: string;
 
     constructor(name: string) {
         this.name = name;
     }
 
-    abstract getEmployeeType(): void;
+    abstract getEmployeeType(): void; //The child need to write thier own implementation
+    getName(){
+        console.log("name");
+    }
 }
 
-class FullTimeEmployee extends Employee {
+class FullTimeEmployee extends Employee implements IEmployee{
+    //Name and getName are coming from parent so IEmployee is not showing an error
 
     constructor(name: string) {
         super(name)
@@ -36,3 +60,4 @@ class Contractors extends Employee {
 
 const john = new FullTimeEmployee("john");
 john.getEmployeeType();
+john.getName()
