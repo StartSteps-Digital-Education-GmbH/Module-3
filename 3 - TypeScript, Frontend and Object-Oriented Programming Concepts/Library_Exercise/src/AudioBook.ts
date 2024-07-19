@@ -1,6 +1,9 @@
 import {DigitalBook} from './DigitalBook'
 import { AudioBookDetails, DigitalBookDetails } from './Types';
 
+// INSTRUCTION:
+// Update AudioBook.ts: Extend DigitalBook and implement getBookDetails.
+
 // Define a new class AudioBook that extends DigitalBook.
 export class AudioBook extends DigitalBook {
     // Add properties duration (number, representing the duration in minutes) and narrator (string).

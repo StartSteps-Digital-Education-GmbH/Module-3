@@ -16,11 +16,6 @@ export class Library {
         this.books = [];
     }
 
-    // --> Add book receives:
-    // 1. Book object
-    // 2. Digital Book details Object
-    // 3. AudioBookDetails object
-
     // Add Book function signatures
     addBook(book: Book): void;                      //done
     addBook(details: BookDetails): void;            // done
@@ -29,11 +24,7 @@ export class Library {
 
     // Actual implementation of Addbook
     addBook(bookOrDetails: Book | BookDetails | DigitalBookDetails | AudioBookDetails): void {
-        // Book object is ready to push
-        // Details --> book object still needs to instantiated (3 options)
-        // DigitalBookDetails & AudioBookDetails contain format  
-
-        if(bookOrDetails instanceof Book){
+        if(bookOrDetails instanceof Book || bookOrDetails instanceof DigitalBook){
             this.books.push(bookOrDetails)
         } else if ('format' in bookOrDetails) { // DigitalBOokdetails and Audiobookdetails both have format
             if (bookOrDetails.format === 'AUDIO') {
@@ -114,7 +105,26 @@ library.addBook(new Book({ title: '1984', author: 'George Orwell', publishedYear
 library.addBook({ title: 'Digital Fortress', author: 'Dan Brown', publishedYear: 1998, genre: 'Fiction' , format: DigitalBookFormat.EPUB, fileSize: 5});
 library.addBook({ title: 'The Alchemist', author: 'Paulo Coelho', publishedYear: 1988, genre: 'Fiction', format: DigitalBookFormat.AUDIO, fileSize: 300, duration: 240, narrator: 'Jeremy Irons'});
 console.log(library.getBooks())
-// --> Add book receives:
-// 1. Book object
-// 2. Digital Book details Object
-// 3. AudioBookDetails object
+
+
+
+
+// Steps:
+// Create an Abstract Class:
+// Objective: Define common properties and methods for all book types.
+// Create AbstractBook.ts: Define the abstract class AbstractBook.
+// Inside the abstract class you can have your common fields and also the required methods like:
+// abstract getBookDetails(): string;
+
+// Extend Abstract Class:
+// Objective: Ensure specific book types extend AbstractBook and implement its abstract methods.
+
+
+
+// Update AudioBook.ts: Extend DigitalBook and implement getBookDetails.
+
+
+
+// TEST
+
+

@@ -1,8 +1,9 @@
+import { AbstractBook } from "./AbstractBook";
 import { Book } from "./Book";
 import { BookDetails, DigitalBookDetails, DigitalBookFormat } from "./Types"
 
 // Define a new class DigitalBook that extends Book.
-export class DigitalBook extends Book {
+export class DigitalBook extends AbstractBook {
     // Add properties format (type DigitalBookFormat) and fileSize (number, representing the file size in MB).
     private _format: DigitalBookFormat;
     private _fileSize: number;
@@ -40,12 +41,12 @@ export class DigitalBook extends Book {
 
     // Override the getBookDetails() method to include the format and file size in the details.
     getBookDetails(): DigitalBookDetails {
-        // Get book details from super class Book
-        const bookDetails = super.getBookDetails()
-
         // return bookdetais with format and fileSize
         return {
-            ...bookDetails, // Copies all elements from bookDetails into our new object 
+            title: this.title,
+            author: this.author,
+            publishedYear: this.publishedYear,
+            genre: this.genre,
             format: this._format,
             fileSize: this._fileSize
         }
