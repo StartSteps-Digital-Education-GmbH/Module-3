@@ -1,3 +1,8 @@
+interface TaskInfo {
+    title: string;
+    completed: boolean;
+}
+
 class Task {
     title: string;
     completed: boolean;
@@ -8,7 +13,10 @@ class Task {
     }
 }
 
-// Example usage
-const task1 = new Task('Complete assignment', false);
-console.log(task1);
+function displayTask(task: TaskInfo): void {
+    console.log(`Task: ${task.title} | Completed: ${task.completed}`);
+}
 
+// Example usage
+const task1Info: TaskInfo = { title: 'Complete assignment', completed: false };
+displayTask(task1Info);
