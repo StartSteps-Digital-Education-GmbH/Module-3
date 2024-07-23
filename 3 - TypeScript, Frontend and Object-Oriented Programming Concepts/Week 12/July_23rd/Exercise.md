@@ -48,5 +48,5 @@ Start by completing all 10 exercises from the NPM section on freeCodeCamp:
 [NPM Exercises](https://www.freecodecamp.org/learn/back-end-development-and-apis/)
 
 ### React Exercises
-After completing the NPM exercises, proceed with the first 15 exercises from the React section on freeCodeCamp:
+After completing the NPM exercises, proceed with the first 15 exercises from the <ins>React section</ins> on freeCodeCamp:
 [React Exercises](https://www.freecodecamp.org/learn/front-end-development-libraries/)
