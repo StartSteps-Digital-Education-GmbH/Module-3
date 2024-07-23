@@ -31,10 +31,9 @@ The tutorials take
 
 10. **What is Nextjs**
     - [What is NextJs? And Should You use NextJs in 2023? | #1](https://www.youtube.com/watch?v=37rmwdseNiQ&ab_channel=Lypras) - Duration: 4:45
-    - [Next js Tutorial for Beginners - Only until 6:30 ](https://www.youtube.com/watch?v=ZVnjOPwW4ZA&t=234s) - Duration: 3:00
 
-12. **Routes and Dynamic Routes**
-    - [Dynamic Routing in Next.js](https://www.youtube.com/watch?v=RebA5J-rlwg) - Duration: 21:50
+12. **More on NextJS and Routes and Dynamic Routes**
+    - [Tutorial: Watch 1-7 to understand routing, and dynamic routes](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 
 ## Additional Optional Videos
 1. **Complete React Tutorial for Beginners**
