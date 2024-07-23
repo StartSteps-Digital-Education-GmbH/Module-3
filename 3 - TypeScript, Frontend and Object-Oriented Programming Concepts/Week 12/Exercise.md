@@ -17,7 +17,7 @@ The tutorials take
 
 6. **JSX**
    - [ReactJS Tutorial - 8 - JSX](https://www.youtube.com/watch?v=7fPXI_MnBOY&ab_channel=Codevolution) - Duration: 11:24
-   - [What is JSX? Creating Components in React] - https://www.youtube.com/watch?v=PbkwqVZsUgs&ab_channel=SamMeech-Ward - Duration: 16:48
+   - [What is JSX? Creating Components in React](https://www.youtube.com/watch?v=PbkwqVZsUgs&ab_channel=SamMeech-Ward) - Duration: 16:48
 
 7. **What is a Component, JSX & Render - React**
    - [Every React Concept Explained in 12 Minutes](https://www.youtube.com/watch?v=wIyHSOugGGw&ab_channel=CodeBootcamp) - Duration: 11:52
