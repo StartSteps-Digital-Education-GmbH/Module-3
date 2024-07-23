@@ -10,10 +10,10 @@ The tutorials take
 
 2. **NPM, Package.json**
    - [What is NPM, and why do we need it? | Tutorial for beginners](https://www.youtube.com/watch?v=P3aKRdUyr0s&ab_channel=CoderCoder) - Duration: 14:26
-
+   - [info on package-lock.json](https://www.geeksforgeeks.org/what-is-package-lock-json/)
+     
 4. **Why We Use React**
    - [What Is React (React js) & Why Is It So Popular?](https://www.youtube.com/watch?v=N3AkSS5hXMA&ab_channel=ProgrammingwithMosh) - Duration: 14:23
-
 
 6. **JSX**
    - [ReactJS Tutorial - 8 - JSX](https://www.youtube.com/watch?v=7fPXI_MnBOY&ab_channel=Codevolution) - Duration: 11:24
@@ -21,9 +21,12 @@ The tutorials take
 
 7. **What is a Component, JSX & Render - React**
    - [Every React Concept Explained in 12 Minutes](https://www.youtube.com/watch?v=wIyHSOugGGw&ab_channel=CodeBootcamp) - Duration: 11:52
+  
+8. **Virtual DOM - React**
+   - [Understanding Virtual DOM?](https://www.youtube.com/watch?v=dxz9HZ40h4I&ab_channel=DailyTuition) - Duration: 4:31
 
-8. **What is Render - React**
-   - [Understanding Render in React]([https://www.youtube.com/watch?v=8YqUBVOIt7g](https://www.youtube.com/watch?v=mECV6nGOqNo&ab_channel=CodeSketched)) - Duration: 10:15
+9. **What is Render - React**
+   - [Understanding Render in React](https://www.youtube.com/watch?v=mECV6nGOqNo&t=97s&ab_channel=CodeSketched) 
 
 10. **What is Route**
     - [Introduction to Routing in Web Development](https://www.youtube.com/watch?v=Law7wfdg_ls) - Duration: 14:55
