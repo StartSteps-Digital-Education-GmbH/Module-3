@@ -17,7 +17,7 @@ This module provides a comprehensive coverage of TypeScript, frontend developmen
 ### Title: Social Network Management System
 **Description**: This project aims to develop a web application using Next.js and TypeScript where users can manage profiles, set status messages, add friends, and view a personalized feed of status updates. The project will emphasize local state management and responsive UI design.
 
-## Repository Structure
+## Example Repository Structure
 ```
 module-3-typescript-frontend-oop/
 ├── README.md
@@ -42,19 +42,6 @@ module-3-typescript-frontend-oop/
 
 ## Exercises and Submissions
 Each day includes an exercise file, a morning code folder, and an afternoon code/solution folder.
-
-### How to Access Exercises
-1. Navigate to the appropriate `weekX/dayY` directory.
-2. Open the `exercise.md` file to view the instructions.
-
-### Morning Code
-1. Navigate to the appropriate `weekX/dayY/morning-code` directory.
-2. Work on the morning code tasks as specified.
-
-### Afternoon Code and Solutions
-1. Navigate to the appropriate `weekX/dayY/afternoon-code` directory.
-2. Work on the afternoon code tasks as specified.
-3. Solutions can be found in the `solution.md` file after you have attempted the exercise.
 
 ## Submission Process
 
@@ -92,17 +79,6 @@ Each day includes an exercise file, a morning code folder, and an afternoon code
    ```sh
    git push origin main
    ```
-
-## Showcasing Your Work
-
-### Linking to Your Repository
-- Include a link to your GitHub repository on your resume or personal portfolio to showcase your work.
-
-### Example of Including Repository Links in a Resume
-- [Bootcamp Exercises](https://github.com/your-github-username/bootcamp-exercises)
-
-## Questions?
-If you have any questions, please open an issue in this repository, and we'll be happy to help!
 
 ## Additional Resources
 - [GitHub Guide: Creating a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)
