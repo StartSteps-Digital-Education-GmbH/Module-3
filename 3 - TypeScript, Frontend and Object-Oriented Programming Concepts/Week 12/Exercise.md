@@ -12,8 +12,7 @@ The tutorials take
 4. **Why We Use React**
    - [What Is React (React js) & Why Is It So Popular?](https://www.youtube.com/watch?v=N3AkSS5hXMA&ab_channel=ProgrammingwithMosh) - Duration: 14:23
 
-5. **How React Runs the Project in Background**
-   - [How React Works Internally](https://www.youtube.com/watch?v=bq_xweiQXG8) - Duration: 22:10
+
 
 6. **JSX**
    - [What is JSX?](https://www.youtube.com/watch?v=KVPFJ8zXx9g) - Duration: 7:20
@@ -35,6 +34,12 @@ The tutorials take
 
 12. **Routes and Dynamic Routes**
     - [Dynamic Routing in Next.js](https://www.youtube.com/watch?v=RebA5J-rlwg) - Duration: 21:50
+
+## Additional Optional Videos
+1. **Complete React Tutorial for Beginners**
+   - [React Tutorial for Beginners] (https://www.youtube.com/watch?v=KVPFJ8zXx9g) - DurationL 1h20
+2. **Complete NextJS Tutorial for Beginners**
+   - [Next js Tutorial for Beginners] (https://www.youtube.com/watch?v=ZVnjOPwW4ZA&t=139s&ab_channel=ProgrammingwithMosh)
 
 ## Exercises
 
