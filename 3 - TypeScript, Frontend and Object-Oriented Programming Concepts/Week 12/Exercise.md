@@ -30,6 +30,7 @@ The tutorials take
    - [Understanding Render in React](https://www.youtube.com/watch?v=mECV6nGOqNo&t=97s&ab_channel=CodeSketched) 
 
 10. **What is Nextjs**
+    - [What is NextJs? And Should You use NextJs in 2023? | #1](https://www.youtube.com/watch?v=37rmwdseNiQ&ab_channel=Lypras) - Duration: 4:45
     - [Next js Tutorial for Beginners - Only until 6:30 ](https://www.youtube.com/watch?v=ZVnjOPwW4ZA&t=234s) - Duration: 3:00
 
 12. **Routes and Dynamic Routes**
