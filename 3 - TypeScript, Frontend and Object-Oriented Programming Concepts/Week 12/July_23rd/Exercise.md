@@ -37,7 +37,7 @@ The tutorials take
 
 ## Additional Optional Videos
 1. **Complete React Tutorial for Beginners**
-   - [React Tutorial for Beginners] (https://www.youtube.com/watch?v=KVPFJ8zXx9g) - DurationL 1h20
+   - [React Tutorial for Beginners] (https://www.youtube.com/watch?v=SqcY0GlETPk&ab_channel=ProgrammingwithMosh) - DurationL 1h20
 2. **Complete NextJS Tutorial for Beginners**
    - [Next js Tutorial for Beginners] (https://www.youtube.com/watch?v=ZVnjOPwW4ZA&t=139s&ab_channel=ProgrammingwithMosh)
 
