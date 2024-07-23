@@ -10,7 +10,7 @@ The tutorials take
 
 2. **NPM, Package.json**
    - [What is NPM, and why do we need it? | Tutorial for beginners](https://www.youtube.com/watch?v=P3aKRdUyr0s&ab_channel=CoderCoder) - Duration: 14:26
-   - [info on package-lock.json](https://www.geeksforgeeks.org/what-is-package-lock-json/)
+   - [Info on package-lock.json](https://www.geeksforgeeks.org/what-is-package-lock-json/)
      
 4. **Why We Use React**
    - [What Is React (React js) & Why Is It So Popular?](https://www.youtube.com/watch?v=N3AkSS5hXMA&ab_channel=ProgrammingwithMosh) - Duration: 14:23
@@ -28,7 +28,7 @@ The tutorials take
 9. **What is Render - React**
    - [Understanding Render in React](https://www.youtube.com/watch?v=mECV6nGOqNo&t=97s&ab_channel=CodeSketched) 
 
-10. **What is Route**
+10. **What is a Route**
     - [Introduction to Routing in Web Development](https://www.youtube.com/watch?v=Law7wfdg_ls) - Duration: 14:55
 
 11. **Why We Use Next.js**
