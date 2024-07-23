@@ -24,8 +24,8 @@ class Task implements TaskInfo {
 const tasks: Task[] = [];
 
 function displayTasks(tasks: Task[], completedFilter: 'all' | 'completed' | 'incomplete' = 'all'): void {
-    const taskList = document.getElementById('task-list') as HTMLUListElement | null;
-    if (taskList) {
+    const taskList = document.getElementById('task-list') as HTMLUListElement;
+   
         taskList.innerHTML = ''; // Clear previous tasks
 
         tasks.forEach(task => {
@@ -53,7 +53,7 @@ function displayTasks(tasks: Task[], completedFilter: 'all' | 'completed' | 'inc
                 taskList.appendChild(taskElement);
             }
         });
-    }
+    
 }
 
 function addTask(title: string): void {
