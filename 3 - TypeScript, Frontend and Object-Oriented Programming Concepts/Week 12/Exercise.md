@@ -3,6 +3,8 @@ The tutorials take
 
 
 ## Video Tutorials
+**Full React and NextJS tutorials below**
+
 1. **What is Different Between Library and Framework**
    - [What are libraries and frameworks?](https://www.youtube.com/watch?v=LimOOe6I4eo) - Duration: 3:45
 
@@ -13,18 +15,15 @@ The tutorials take
    - [What Is React (React js) & Why Is It So Popular?](https://www.youtube.com/watch?v=N3AkSS5hXMA&ab_channel=ProgrammingwithMosh) - Duration: 14:23
 
 
-
 6. **JSX**
-   - [What is JSX?](https://www.youtube.com/watch?v=KVPFJ8zXx9g) - Duration: 7:20
+   - [ReactJS Tutorial - 8 - JSX](https://www.youtube.com/watch?v=7fPXI_MnBOY&ab_channel=Codevolution) - Duration: 11:24
+   - [What is JSX? Creating Components in React] - https://www.youtube.com/watch?v=PbkwqVZsUgs&ab_channel=SamMeech-Ward - Duration: 16:48
 
-7. **Virtual DOM**
-   - [The Virtual DOM in React](https://www.youtube.com/watch?v=dA5ab6NfHfw) - Duration: 8:00
+7. **What is a Component, JSX & Render - React**
+   - [Every React Concept Explained in 12 Minutes](https://www.youtube.com/watch?v=wIyHSOugGGw&ab_channel=CodeBootcamp) - Duration: 11:52
 
-8. **What is a Component (Functional) - React**
-   - [Functional Components in React](https://www.youtube.com/watch?v=1f-eQcl1ET8) - Duration: 15:40
-
-9. **What is Render - React**
-   - [Understanding Render in React](https://www.youtube.com/watch?v=8YqUBVOIt7g) - Duration: 10:15
+8. **What is Render - React**
+   - [Understanding Render in React]([https://www.youtube.com/watch?v=8YqUBVOIt7g](https://www.youtube.com/watch?v=mECV6nGOqNo&ab_channel=CodeSketched)) - Duration: 10:15
 
 10. **What is Route**
     - [Introduction to Routing in Web Development](https://www.youtube.com/watch?v=Law7wfdg_ls) - Duration: 14:55
