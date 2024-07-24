@@ -1,5 +1,5 @@
 
-import { BookDetails, DigitalBookFormat, LibraryDetails} from './Types';
+import { AudioBookDetails, BookDetails, DigitalBookDetails, DigitalBookFormat, LibraryDetails} from './Types';
 import { Book } from './Book';
 import { DigitalBook } from './DigitalBook';
 import { AudioBook } from './AudioBook';
@@ -16,10 +16,36 @@ export class Library {
         this.books = [];
     }
 
-    // Method to add a book to the library
-    addBook(book: Book): void {
-        this.books.push(book);
+    // Add Book function signatures
+    addBook(book: Book): void;                      //done
+    addBook(details: BookDetails): void;            // done
+    addBook(details: DigitalBookDetails): void;     // done
+    addBook(details: AudioBookDetails): void;       // done
+
+    // Actual implementation of Addbook
+    addBook(bookOrDetails: Book | BookDetails | DigitalBookDetails | AudioBookDetails): void {
+        if(bookOrDetails instanceof Book || bookOrDetails instanceof DigitalBook){
+            this.books.push(bookOrDetails)
+        } else if ('format' in bookOrDetails) { // DigitalBOokdetails and Audiobookdetails both have format
+            if (bookOrDetails.format === 'AUDIO') {
+                // bookOrDetails is AudioBookDetails
+                this.books.push(new AudioBook(<AudioBookDetails>bookOrDetails))
+            } else {
+                // bookOrDetails is DigitalBookDetails
+                this.books.push(new DigitalBook(<DigitalBookDetails>bookOrDetails))
+            }
+        } else {
+            // bookOrDetails is BookDetails
+            this.books.push(new Book(bookOrDetails))
+        }
     }
+
+
+
+    // // Old Addbook method
+    // addBook(book: Book): void {
+    //     this.books.push(book);
+    // }
 
     // Method to remove a book from the library by title
     removeBook(title: string): void {
@@ -68,4 +94,37 @@ console.log('\nAdding Audio book')
 const audioBook1 = new AudioBook({ title: 'AUDIOBOOK', author: 'Yuval Noah Harari', publishedYear: 2011, genre: 'Non-Fiction', format: DigitalBookFormat.PDF, fileSize: 5, duration: 60, narrator: "Max"})
 library.addBook(audioBook1)
 console.log(library.getBooks())
+
+
+
+
+
+// Example of usage after updates are made:
+console.log('\nTesting Overloaded AddBook Method')
+library.addBook(new Book({ title: '1984', author: 'George Orwell', publishedYear: 1949, genre: 'Fiction' })); 
+library.addBook({ title: 'Digital Fortress', author: 'Dan Brown', publishedYear: 1998, genre: 'Fiction' , format: DigitalBookFormat.EPUB, fileSize: 5});
+library.addBook({ title: 'The Alchemist', author: 'Paulo Coelho', publishedYear: 1988, genre: 'Fiction', format: DigitalBookFormat.AUDIO, fileSize: 300, duration: 240, narrator: 'Jeremy Irons'});
+console.log(library.getBooks())
+
+
+
+
+// Steps:
+// Create an Abstract Class:
+// Objective: Define common properties and methods for all book types.
+// Create AbstractBook.ts: Define the abstract class AbstractBook.
+// Inside the abstract class you can have your common fields and also the required methods like:
+// abstract getBookDetails(): string;
+
+// Extend Abstract Class:
+// Objective: Ensure specific book types extend AbstractBook and implement its abstract methods.
+
+
+
+// Update AudioBook.ts: Extend DigitalBook and implement getBookDetails.
+
+
+
+// TEST
+
 
