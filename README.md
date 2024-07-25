@@ -22,22 +22,27 @@ This module provides a comprehensive coverage of TypeScript, frontend developmen
 module-3-typescript-frontend-oop/
 ├── README.md
 ├── week1/
-│   ├── day1/
-│   │   ├── exercise.md
-│   │   ├── morning-code/
-│   │   ├── afternoon-code/
-│   │   │   ├── solution.md
-│   ├── day2/
-│   │   ├── exercise.md
-│   │   ├── morning-code/
-│   │   ├── afternoon-code/
-│   │   │   ├── solution.md
+│   ├── 01.Topic/
+│   │   ├── morning/
+│   │   ├── afternoon/
+│   │   │   ├── exercise.md
+│   │   │   ├── solution/
+│   ├── 02.Topic/
+│   │   ├── morning/
+│   │   ├── afternoon/
+│   │   │   ├── exercise.md
+│   │   │   ├── solution/
 ├── week2/
-│   ├── day1/
-│   │   ├── exercise.md
-│   │   ├── morning-code/
-│   │   ├── afternoon-code/
-│   │   │   ├── solution.md
+│   ├── 01.Topic/
+│   │   ├── morning/
+│   │   ├── afternoon/
+│   │   │   ├── exercise.md
+│   │   │   ├── solution/
+│   ├── 02.Topic/
+│   │   ├── morning/
+│   │   ├── afternoon/
+│   │   │   ├── exercise.md
+│   │   │   ├── solution/
 ```
 
 ## Exercises and Submissions
