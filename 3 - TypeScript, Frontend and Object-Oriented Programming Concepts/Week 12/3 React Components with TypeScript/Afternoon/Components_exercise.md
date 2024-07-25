@@ -16,7 +16,7 @@ I realized the exercise was following the older 'pages' structure, rather than t
 
 1. **Create a new Next.js project using create-next-app:**
    ```sh
-   npx create-next-app@latest react-components-ts --ts --experimental-app
+   npx create-next-app@latest react-components-ts --ts
    ```
    This will create a new Next.js project with TypeScript support and the `app` directory enabled.
 
