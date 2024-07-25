@@ -3,7 +3,7 @@ export interface IPost {
     title: string,
     content?: string,
     creationDate?: Date,
-    user: User;
+    user?: User;
 }
 
 

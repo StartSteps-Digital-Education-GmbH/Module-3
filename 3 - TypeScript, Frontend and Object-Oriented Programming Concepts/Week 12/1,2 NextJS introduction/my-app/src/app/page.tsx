@@ -28,7 +28,7 @@ const posts: IPost[] = [
     id: 3,
     title: "Post 3",
     content: "asdasdasd",
-    creationDate: new Date(),
+    creationDate: new Date('2022-02-12'),
     user: {
       name: "abcd",
       surname: "asdasd",
@@ -38,7 +38,7 @@ const posts: IPost[] = [
   {
     id: 4,
     title: "Post 3",
-    creationDate: new Date(),
+    creationDate: new Date('19-19-190T'),
     user: {
       name: "John",
       surname: "asdasd",
@@ -53,15 +53,16 @@ export default function Home() {
       {
         //javascript
         posts.map((post) => (
-          <>
+          <div key={post.id}>
             <p>post :{post.id}</p>
             <p>Title: {post.title}</p>
             <p>Content: {post.content ? post.content : 'No Content'}</p>
+            <p>Posted on: {post.creationDate?.toString()}</p>
             <div>
               <p>Created by: {post.user.name} {post.user.surname}</p>
               <p>User Age: {post.user.age}</p>
             </div>
-          </>
+          </div>
         ))
 
       }
