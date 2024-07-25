@@ -1,7 +1,7 @@
 
 # Week 12: React Components with TypeScript
 
-## Continuation from Tuesday
+## 1. Continuation from Tuesday
 First complete the tutorials and exercises from Tuesday :) :
 [Tutorials + Exercises](https://github.com/StartSteps-Digital-Education-GmbH/Module-3-TypeScript-Frontend-and-Object-Oriented-Programming-Concepts/blob/main/3%20-%20TypeScript%2C%20Frontend%20and%20Object-Oriented%20Programming%20Concepts/Week%2012/1%2C2%20NextJS%20introduction/Afternoon/Tutorials%2BExercises.md)
 
@@ -9,7 +9,7 @@ First complete the tutorials and exercises from Tuesday :) :
 ----------------------------------------------------------------------------------------------------------------------------
 
 
-## Today's Exercises: Building a Dashboard with React Components and TypeScript
+## 2. Today's Exercises: Building a Dashboard with React Components and TypeScript
 After completing Tuesday's exercises, continue with the following exercises.
 
 ### Task 1: Create the SocialNetworkUser Interface
