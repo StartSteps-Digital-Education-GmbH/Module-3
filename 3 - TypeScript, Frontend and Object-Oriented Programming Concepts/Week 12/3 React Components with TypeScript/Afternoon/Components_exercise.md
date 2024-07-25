@@ -7,13 +7,6 @@ Before starting today's exercises, please ensure you have completed the tutorial
 
 ## 2. Setting Up a New Next.js Project for Today's Exercises
 
-### Important Note
-
-I realized the exercise was following the older 'pages' structure, rather than the more modern 'app' structure. If you were working on the old version and want to continue, go [here](https://github.com/StartSteps-Digital-Education-GmbH/Module-3-TypeScript-Frontend-and-Object-Oriented-Programming-Concepts/blob/main/3%20-%20TypeScript,%20Frontend%20and%20Object-Oriented%20Programming%20Concepts/Week%2012/3%20React%20Components%20with%20TypeScript/Afternoon/Components_exercise_Pages_structure.md). If you want to follow the 'app' structure, then continue with the exercises below.
-
-
-### Using the `app` Directory (Newer Method)
-
 1. **Create a new Next.js project using create-next-app:**
    ```sh
    npx create-next-app@latest react-components-ts --ts
