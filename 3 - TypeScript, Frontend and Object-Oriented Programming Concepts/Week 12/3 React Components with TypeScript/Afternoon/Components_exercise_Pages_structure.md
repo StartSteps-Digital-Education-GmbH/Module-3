@@ -3,6 +3,7 @@
 After completing Tuesday's exercises, continue with the following exercises.
 
 ## Older method using 'pages' structure instead of App
+## If you want to follow the modern method using app, click [here](https://github.com/StartSteps-Digital-Education-GmbH/Module-3-TypeScript-Frontend-and-Object-Oriented-Programming-Concepts/blob/main/3%20-%20TypeScript%2C%20Frontend%20and%20Object-Oriented%20Programming%20Concepts/Week%2012/3%20React%20Components%20with%20TypeScript/Afternoon/Components_exercise.md)
 
 ### Task 1: Create the SocialNetworkUser Interface
 **Objective:** Define a TypeScript interface for a social network user.
