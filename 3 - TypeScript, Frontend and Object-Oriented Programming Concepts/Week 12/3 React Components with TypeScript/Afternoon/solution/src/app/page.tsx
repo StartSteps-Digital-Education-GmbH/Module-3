@@ -1,3 +1,5 @@
+"use client"; // Mark this component as a client component
+
 import React from 'react';
 import Feed from './Feed';
 
