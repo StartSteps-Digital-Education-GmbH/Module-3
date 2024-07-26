@@ -55,12 +55,15 @@ Use the `useEffect` hook to simulate fetching tasks from an API when the compone
 1. Update the `page` component to use the `useEffect` hook.
    - Import the useEffect hook from React at the top of your file.
    - Use the useEffect hook inside your component to simulate fetching tasks from an API.
-2. Simulate an API call that fetches tasks and updates the state after a delay.
-3. The `setTimeout` function is used to delay the update of the tasks state, simulating an asynchronous fetch operation.
+2. Simulate an API call that fetches tasks and updates the state after a delay:
+   - Use the setTimeout function within useEffect to simulate an API call.
+   - After a delay, update the tasks state with a new array of tasks.
+   - This will help you understand how to handle side effects and asynchronous operations in your components.
+
 
 ### Explanation:
-Use `useEffect` to simulate an API call that fetches tasks.
-The `setTimeout` function is used to delay the update of the tasks state, simulating an asynchronous fetch operation.
+- `useEffect`: The useEffect hook allows you to perform side effects in your component. In this case, it will simulate an API call to fetch tasks.
+- `setTimeout`: The setTimeout function is used to simulate a delay, mimicking the behavior of an asynchronous fetch operation.
 
 ## Task 4: Use useContext to Handle Task Input and Add New Tasks
 ### Objective:
@@ -69,11 +72,21 @@ Use the useContext hook to handle task input and add new tasks to the list.
 ### Instructions:
 
 #### Create a Context and Provider:
-1. Create a new file TaskContext.tsx in the src/context folder.
-2. Define a TaskContext and TaskProvider to manage the task state and provide it to the component tree.
+1. Create a new file `TaskContext.tsx` in the `src/context` folder.
+2. Define a TaskContext and TaskProvider to manage the task state and provide it to the component tree:
+   - In TaskContext.tsx, define a context named TaskContext.
+   - Create a TaskProvider component that will manage the task state and provide it to the component tree.
+   - This will help you understand how to share state across multiple components using context.
 
 #### Update page.tsx to Use the Context:
-1. Use the useContext hook to access the task state and the function to add new tasks.
-2. Add an input field and a button to the page component.
-3. Implement the addTask function to add a new task to the task list.
-4. The new task is added to the state, and the input field is cleared after the task is added.
+
+1. Use the `useContext` hook:
+   - Import the useContext hook from React at the top of your file.
+   - Use the useContext hook to access the task state and the function to add new tasks.
+2. Add an input field and a button:
+   - Add an input field and a button to your page component.
+   - Use the input field to enter new task titles.
+3. Implement the `addTask` function:
+   - Implement the `addTask` function to add a new task to the task list.
+   - When the button is clicked, the new task should be added to the state, and the input field should be cleared.
+   - This will help you understand how to handle form inputs and update state using context.
