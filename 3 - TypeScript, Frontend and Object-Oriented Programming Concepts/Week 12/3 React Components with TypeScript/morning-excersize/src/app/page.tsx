@@ -44,7 +44,6 @@ const HelloFunction = (props: IHelloClass) => {
   return <p>Hello to {props.name} from Class Component</p>
 }
 
-
 export default function Home() {
   return (
     <main>
