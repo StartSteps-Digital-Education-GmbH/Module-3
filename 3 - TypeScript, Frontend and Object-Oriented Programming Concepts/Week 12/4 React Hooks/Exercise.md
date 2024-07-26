@@ -34,16 +34,16 @@ Use the `useState` hook to manage the state of the task list in the `page` compo
 **Create the page Component:**
 1. Create or update the `page.tsx` file (in `src/app`).
 2. Use the `useState` hook to manage the list of tasks.
-   a. Import the `useState` hook from React at the top of your file.
-   b. Inside your component, initialize the tasks state with an array of three dummy tasks using `useState`.
-   This will allow you to manage and update the list of tasks within your component.
+   - Import the `useState` hook from React at the top of your file.
+   - Inside your component, initialize the tasks state with an array of three dummy tasks using `useState`.
+   - This will allow you to manage and update the list of tasks within your component.
 
 **Dummy Data example that TaskList should show:**
 - Task 1: Title: "Learn React", Completed: false
 - Task 2: Title: "Learn TypeScript", Completed: false
 - Task 3: Title: "Build a Project", Completed: false
 
-3. Pass the tasks state to the `TaskList` component to display the tasks.
+3. Pass the `tasks` state as a prop to the `TaskList` component to display the tasks.
 
 ## Task 3: Use useEffect to Simulate Fetching Tasks from an API
 ### Objective:
@@ -53,6 +53,8 @@ Use the `useEffect` hook to simulate fetching tasks from an API when the compone
 
 **Simulate Fetching Tasks:**
 1. Update the `page` component to use the `useEffect` hook.
+   - Import the useEffect hook from React at the top of your file.
+   - Use the useEffect hook inside your component to simulate fetching tasks from an API.
 2. Simulate an API call that fetches tasks and updates the state after a delay.
 3. The `setTimeout` function is used to delay the update of the tasks state, simulating an asynchronous fetch operation.
 
