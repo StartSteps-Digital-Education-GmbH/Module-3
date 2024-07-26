@@ -20,7 +20,10 @@ Define a TypeScript interface for a task and create a component that displays a 
 
 **Create the Task List Component:**
 1. Create a new file `TaskList.tsx` in the `src/components` folder.
-2. Define a functional component `TaskList` that accepts an array of `Task` objects as a prop and displays each task's title and completion status.
+2. In TaskList.tsx, define a functional component named TaskList.
+   a. This component should accept an array of Task objects as a prop.
+   b. The component will map over the array and display each task's title and completion status.
+**Learning Objective:** This will help you understand how to pass and display data using props.
 
 ## Task 2: Use useState to Manage Task State
 ### Objective:
@@ -29,8 +32,11 @@ Use the `useState` hook to manage the state of the task list in the `page` compo
 ### Instructions:
 
 **Create the page Component:**
-1. Create or update the `page.tsx` file.
-2. Use the `useState` hook to manage the list of tasks. (Initialize the tasks state with an array of three dummy tasks)
+1. Create or update the `page.tsx` file (in `src/app`).
+2. Use the `useState` hook to manage the list of tasks.
+   a. Import the `useState` hook from React at the top of your file.
+   b. Inside your component, initialize the tasks state with an array of three dummy tasks using `useState`.
+   This will allow you to manage and update the list of tasks within your component.
 
 **Dummy Data example that TaskList should show:**
 - Task 1: Title: "Learn React", Completed: false
