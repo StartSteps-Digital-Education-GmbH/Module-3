@@ -1,5 +1,5 @@
 
-# React Hooks
+# Week 12: React Hooks - UseState, UseEffect, and UseContext
 
 ## Today's plan
 You can work on [yesterdays exercises](https://github.com/StartSteps-Digital-Education-GmbH/Module-3-TypeScript-Frontend-and-Object-Oriented-Programming-Concepts/blob/main/3%20-%20TypeScript%2C%20Frontend%20and%20Object-Oriented%20Programming%20Concepts/Week%2012/3%20React%20Components%20with%20TypeScript/Afternoon/Components_exercise.md) if you haven't finished them already, read up on today's topic, or do today's exercises. :D
@@ -59,13 +59,13 @@ The `setTimeout` function is used to delay the update of the tasks state, simula
 Use the useContext hook to handle task input and add new tasks to the list.
 
 ### Instructions:
-Create a Context and Provider:
 
-Create a new file TaskContext.tsx in the src/context folder.
-Define a TaskContext and TaskProvider to manage the task state and provide it to the component tree.
-Update page.tsx to Use the Context:
+#### Create a Context and Provider:
+1. Create a new file TaskContext.tsx in the src/context folder.
+2. Define a TaskContext and TaskProvider to manage the task state and provide it to the component tree.
 
-Use the useContext hook to access the task state and the function to add new tasks.
-Add an input field and a button to the page component.
-Implement the addTask function to add a new task to the task list.
-The new task is added to the state, and the input field is cleared after the task is added.
+#### Update page.tsx to Use the Context:
+1. Use the useContext hook to access the task state and the function to add new tasks.
+2. Add an input field and a button to the page component.
+3. Implement the addTask function to add a new task to the task list.
+4. The new task is added to the state, and the input field is cleared after the task is added.
