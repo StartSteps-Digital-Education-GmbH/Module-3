@@ -54,7 +54,7 @@ Use the `useEffect` hook to simulate fetching tasks from an API when the compone
 Use `useEffect` to simulate an API call that fetches tasks.
 The `setTimeout` function is used to delay the update of the tasks state, simulating an asynchronous fetch operation.
 
-## Bonus Task: Use useContext to Handle Task Input and Add New Tasks
+## Task 4: Use useContext to Handle Task Input and Add New Tasks
 ### Objective:
 Use the useContext hook to handle task input and add new tasks to the list.
 
