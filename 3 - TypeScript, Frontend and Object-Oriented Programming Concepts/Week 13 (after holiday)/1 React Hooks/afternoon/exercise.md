@@ -1,7 +1,7 @@
 # Week 13: React Hooks - Continued
 
 ## Today's plan
-Before the free week, Ahmad covered 3 hooks (useState, useEffect and useContext) for which we uploaded exercises. These are repeated below in 1-4. If you already finished these exercises you can continue with exercise 5.
+Before the free week, Ahmad covered 3 hooks (useState, useEffect and useContext) for which we uploaded exercises. These are repeated below in 1-4. If you already finished these exercises you can continue with the bonus exercises.
 
 
 ## Task 1: Create the Task Interface and Basic Task List Component
@@ -91,7 +91,7 @@ Use the useContext hook to handle task input and add new tasks to the list.
    - This will help you understand how to handle form inputs and update state using context.
    - 
 
-## Task 5: Implement Task Completion Toggle
+## BONUS Task 5: Implement Task Completion Toggle
 ### Objective:
 Allow users to toggle the completion status of tasks.
 
@@ -112,7 +112,7 @@ Allow users to toggle the completion status of tasks.
 ### Explanation:
 This task will help you understand how to handle state updates and user interactions in React components.
 
-## Task 6: Filter Tasks by Completion Status
+## BONUS Task 6: Filter Tasks by Completion Status
 ### Objective:
 Allow users to filter tasks based on their completion status (all, completed, incomplete).
 
@@ -134,7 +134,7 @@ Allow users to filter tasks based on their completion status (all, completed, in
 ### Explanation:
 This task will help you understand how to implement filtering functionality and manage complex state in React components.
 
-## Task 7: Persist Tasks to Local Storage
+## BONUS Task 7: Persist Tasks to Local Storage
 ### Objective:
 Persist the task list to local storage so that tasks are saved across page reloads.
 
