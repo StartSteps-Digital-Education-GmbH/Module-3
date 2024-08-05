@@ -59,12 +59,10 @@ Each day includes an exercise file, a morning code folder, and an afternoon code
    Replace `your-github-username` with your actual GitHub username.
 
 ### Step 2: Create Directories for Your Submissions
-1. Inside your local repository, create directories for each module, week, and day. For example:
+1. Inside your local repository, create directories for each module, week, and topic. For example:
    ```sh
-   mkdir -p module-3/week1/day1
-   mkdir -p module-3/week1/day2
-   mkdir -p module-3/week2/day1
-   mkdir -p module-3/week2/day2
+   mkdir -p module-3/week1/topic1
+   mkdir -p module-3/week1/topic2
    ```
 
 ### Step 3: Add Exercise Files
