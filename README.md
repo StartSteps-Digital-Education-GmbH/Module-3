@@ -65,11 +65,7 @@ Each day includes an exercise file, a morning code folder, and an afternoon code
    mkdir -p module-3/week1/topic2
    ```
 
-### Step 3: Add Exercise Files
-1. For each day, create an `exercise.md` file in the appropriate directory.
-2. Add your exercise solutions and any other necessary files.
-
-### Step 4: Commit and Push Your Changes
+### Step 3: Commit and Push Your Changes
 1. Stage your changes for commit:
    ```sh
    git add .
