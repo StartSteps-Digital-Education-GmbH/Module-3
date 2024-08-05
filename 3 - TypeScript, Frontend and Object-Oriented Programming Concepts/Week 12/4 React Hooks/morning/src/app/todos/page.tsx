@@ -1,56 +1,66 @@
 'use client';
+import { stat } from "fs";
 import { useReducer } from "react";
 
-const reduser = (state, action) => {
-    // action.type //completed, inprogress
-    // the reduser function should return a new state
+const initialTodos = [
+    {
+        id: 1,
+        title: "TODO 1",
+        body: "Description of TODO 1",
+        completed: false
+    },
+    {
+        id: 2,
+        title: "TODO 2",
+        body: "Description of TODO 2",
+        completed: false
+    },
+]
+
+const reducer = (state, action) => {
     switch (action.type) {
-        case "Completed": //if(action.type === "completed")
+        case "COMPLETE":
             return state.map((todo) => {
                 if (todo.id === action.id) {
-                    return { ...todo, status: "Completed" }
+                    return { ...todo, completed: true }
                 } else {
-                    return todo;
+                    return todo
                 }
             })
-        case "inprogress": //else if(action.type === "inprogress")
+        case "IN_PROGRESS":
             return state.map((todo) => {
                 if (todo.id === action.id) {
-                    return { ...todo, status: "inprogress" }
+                    return { ...todo, completed: false }
                 } else {
-                    return todo;
+                    return todo
                 }
             })
-        default: //else
-            return state;
+        default:
+            return state
     }
 }
-export default function Todos() {
-    const initialTodos = [
-        {
-            id: 1,
-            title: "do the homeworld",
-            status: "Completed",
-        }, {
-            id: 2,
-            title: "do the homeworld 2",
-            status: "inprogress",
-        },
-        {
-            id: 3,
-            title: "do the homeworld 3",
-            status: "Completed",
-        }
-    ]
 
-    const [todos, dispatch] = useReducer(reduser, initialTodos);
+export default function Todos() {
+    const [todos, dispatch] = useReducer(reducer, initialTodos)
+
+    const handleChange = (todo) => {
+        if(todo.completed) {
+            dispatch({ type: "IN_PROGRESS", id: todo.id })    
+        } else {
+            dispatch({ type: "COMPLETE", id: todo.id })
+        }
+    }
 
     return <>
-        {todos.map((todo) => {
-            return <div key={todo.id}>
-                <input type="checkbox" checked={todo.status === "Completed"}>
+        {todos.map((todo) => (
+            <div>
+                <input
+                    type="checkbox"
+                    checked={todo.completed}
+                    onChange={() => handleChange(todo)}
+                />
                 {todo.title}
             </div>
-        })}
+        ))}
     </>
 }
