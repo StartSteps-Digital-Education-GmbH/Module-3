@@ -89,3 +89,64 @@ Use the useContext hook to handle task input and add new tasks to the list.
    - Implement the `addTask` function to add a new task to the task list.
    - When the button is clicked, the new task should be added to the state, and the input field should be cleared.
    - This will help you understand how to handle form inputs and update state using context.
+   - 
+
+## Task 5: Implement Task Completion Toggle
+### Objective:
+Allow users to toggle the completion status of tasks.
+
+### Instructions:
+
+**Update TaskList Component:**
+1. Modify the `TaskList` component to include a button or checkbox that allows users to mark tasks as completed or incomplete.
+2. Pass a function from the `TaskProvider` to the `TaskList` component that updates the task's completion status.
+
+**Update TaskProvider:**
+1. Add a `toggleTaskCompletion` function in the `TaskProvider` that updates the completion status of a task.
+2. Ensure this function is passed down through the context.
+
+### Steps:
+1. Update `TaskContext.tsx` to include the `toggleTaskCompletion` function.
+2. Modify `TaskList.tsx` to call the `toggleTaskCompletion` function when the button or checkbox is clicked.
+
+### Explanation:
+This task will help you understand how to handle state updates and user interactions in React components.
+
+## Task 6: Filter Tasks by Completion Status
+### Objective:
+Allow users to filter tasks based on their completion status (all, completed, incomplete).
+
+### Instructions:
+
+**Update TaskProvider:**
+1. Add state to the `TaskProvider` to manage the current filter (all, completed, incomplete).
+2. Add a function to update the filter state.
+
+**Update TaskList Component:**
+1. Modify the `TaskList` component to only display tasks that match the current filter.
+2. Add buttons or a dropdown in the `page` component to change the current filter.
+
+### Steps:
+1. Update `TaskContext.tsx` to include the filter state and function to update the filter.
+2. Modify `TaskList.tsx` to filter tasks based on the current filter.
+3. Add UI elements in `page.tsx` to allow users to change the filter.
+
+### Explanation:
+This task will help you understand how to implement filtering functionality and manage complex state in React components.
+
+## Task 7: Persist Tasks to Local Storage
+### Objective:
+Persist the task list to local storage so that tasks are saved across page reloads.
+
+### Instructions:
+
+**Update TaskProvider:**
+1. Use the `useEffect` hook to save the tasks to local storage whenever the tasks state changes.
+2. When the `TaskProvider` component mounts, initialize the tasks state from local storage if data is available.
+
+### Steps:
+1. Update `TaskContext.tsx` to save tasks to local storage whenever they change.
+2. Initialize the tasks state from local storage when the component mounts.
+
+### Explanation:
+This task will help you understand how to persist data in the browser and initialize state from an external data source.
