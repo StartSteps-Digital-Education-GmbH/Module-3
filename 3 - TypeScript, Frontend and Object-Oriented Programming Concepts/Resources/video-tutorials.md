@@ -3,11 +3,11 @@
 
 ## Table of Contents
 
- 1. [Intro to React and NextJS - single topic videos](#Intro to React and NextJS)
+ 1. [Intro to React and NextJS - single topic videos](#intro)
  2. [Full REACT & NextJS Tutorials](#Full REACT & NextJS Tutorials)
  3. [Hooks](#Hooks)
 
-
+<a name="intro"/>
 ## Intro to React and NextJS
 **Full React and NextJS tutorials below**
 
