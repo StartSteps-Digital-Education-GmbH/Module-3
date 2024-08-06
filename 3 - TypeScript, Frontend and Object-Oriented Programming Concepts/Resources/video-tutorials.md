@@ -1,3 +1,13 @@
+# Module 3 Video Tutorials
+~ Below I will list some video tutorials that I found helpful or interesting.
+
+## Table of Contents
+
+ 1. [Intro to React and NextJS - single topic videos](#Intro to React and NextJS)
+ 2. [Full REACT & NextJS Tutorials](#Full REACT & NextJS Tutorials)
+ 3. [Hooks](#Hooks)
+
+
 ## Intro to React and NextJS
 **Full React and NextJS tutorials below**
 
