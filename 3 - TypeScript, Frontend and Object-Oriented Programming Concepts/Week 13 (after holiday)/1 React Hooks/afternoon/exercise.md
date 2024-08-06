@@ -44,25 +44,41 @@ Use the `useState` hook to manage the state of the task list in the `page` compo
 
 3. Pass the `tasks` state as a prop to the `TaskList` component to display the tasks.
 
-## Task 3: Use useEffect to Simulate Fetching Tasks from an API
+## Task 3: Use `useEffect` to Simulate Fetching Tasks from an API
+
 ### Objective:
 Use the `useEffect` hook to simulate fetching tasks from an API when the component mounts.
 
+### Explanation:
+When working with real applications, data is often fetched from a server (API) when a component is first rendered. To help you understand this process, we will simulate fetching data from an API using a `setTimeout` function to create a delay, mimicking a network request.
+
 ### Instructions:
 
-**Simulate Fetching Tasks:**
-1. Update the `page` component to use the `useEffect` hook.
-   - Import the useEffect hook from React at the top of your file.
-   - Use the useEffect hook inside your component to simulate fetching tasks from an API.
-2. Simulate an API call that fetches tasks and updates the state after a delay:
-   - Use the setTimeout function within useEffect to simulate an API call.
-   - After a delay, update the tasks state with a new array of tasks.
-   - This will help you understand how to handle side effects and asynchronous operations in your components.
+**Step-by-Step Guide to Simulate Fetching Tasks:**
 
+1. **Import `useEffect` Hook:**
+   At the top of your `page.tsx` file, import the `useEffect` hook from React.
 
-### Explanation:
-- `useEffect`: The useEffect hook allows you to perform side effects in your component. In this case, it will simulate an API call to fetch tasks.
-- `setTimeout`: The setTimeout function is used to simulate a delay, mimicking the behavior of an asynchronous fetch operation.
+2. **Initialize an Empty State:**
+   Start with an empty array for the `tasks` state to simulate an initial loading state before data is fetched.
+
+3. **Use `useEffect` to Simulate API Call:**
+   Inside your `Home` component, use the `useEffect` hook to simulate an API call. The `useEffect` hook allows you to perform side effects, such as fetching data, in a function component.
+
+   - **Step 1: Define the `useEffect` Hook:**
+     Place the `useEffect` hook inside the `Home` component.
+
+   - **Step 2: Simulate the API Call:**
+     Use the `setTimeout` function inside the `useEffect` hook to simulate an API call. This function will update the `tasks` state after a delay (e.g., 1 second) to mimic fetching data from a server.
+
+   - **Explanation:**
+     - `useEffect`: The `useEffect` hook takes two arguments: a function where you perform side effects (e.g., fetching data) and an optional array of dependencies that determine when the side effect should re-run. An empty dependency array ensures that the effect runs only once, after the initial render, similar to `componentDidMount` in class components.
+     - `setTimeout`: The `setTimeout` function is used to create a delay, simulating the time it takes to fetch data from an API.
+     - `setTasks`: After the delay, the `setTasks` function updates the `tasks` state with the new data.
+
+4. **Render the `TaskList` Component:**
+   Pass the `tasks` state as a prop to the `TaskList` component to display the tasks.
+
 
 ## Task 4: Use useContext to Handle Task Input and Add New Tasks
 ### Objective:
