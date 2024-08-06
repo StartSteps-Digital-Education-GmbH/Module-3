@@ -4,8 +4,8 @@
 ## Table of Contents
 
  1. [Intro to React and NextJS - single topic videos](#intro)
- 2. [Full REACT & NextJS Tutorials](#Full REACT & NextJS Tutorials)
- 3. [Hooks](#Hooks)
+ 2. [Full REACT & NextJS Tutorials](#full-tut)
+ 3. [Hooks](#hooks)
 
 <a name="intro"/>
 
@@ -42,11 +42,15 @@
 12. **More on NextJS and Routes and Dynamic Routes**
     - [Tutorial: Watch 1-7 to understand routing, and dynamic routes](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 
+<a name="full-tut"/>
+
 ## Full REACT & NextJS Tutorials
 1. **Complete React Tutorial for Beginners**
    - [React Tutorial for Beginners] (https://www.youtube.com/watch?v=SqcY0GlETPk&ab_channel=ProgrammingwithMosh) - DurationL 1h20
 2. **Complete NextJS Tutorial for Beginners**
    - [Next js Tutorial for Beginners] (https://www.youtube.com/watch?v=ZVnjOPwW4ZA&t=139s&ab_channel=ProgrammingwithMosh)
+
+<a name="hooks"/>
 
 ## Hooks
 1. [useState](https://www.youtube.com/watch?v=V9i3cGD-mts&list=PLApy4UwQM3UrZsBTY111R6P4frt6WK-G2&index=2)
