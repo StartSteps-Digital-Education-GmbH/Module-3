@@ -150,10 +150,11 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 ## Step 6: Display the Student List in Next.js Page
 
-### Modify `pages/index.tsx` to Use Redux:
+### Modify `app/page.tsx` to Use Redux:
 
 1. **Import and Use the Connected `StudentList` Component:**
-   - In your `pages/index.tsx` file, import the `StudentList` component and use it within the component.
+   - In your `pages/index.tsx` file, import the `StudentList` component.
+   - create a default functional Home component and render the StudentList component in there.
 
 2. **Verify Everything is Working:**
    - Run the development server using `npm run dev`.
