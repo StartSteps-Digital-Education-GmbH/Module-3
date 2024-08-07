@@ -29,7 +29,6 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 2. **Define the `IStudent` Interface:**
    - Inside the `interfaces.ts` file, define an interface named `IStudent` with properties for `id`, `name`, and `hobby`.
-   - **Explanation:** Interfaces in TypeScript allow you to define the shape of an object. This helps with type-checking and ensures that objects adhere to a specific structure.
 
 ### Create Redux Actions (addStudent and deleteStudent):
 
