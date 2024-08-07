@@ -160,7 +160,5 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
    - Run the development server using `npm run dev`.
    - Open your browser and navigate to `http://localhost:3000`.
    - Verify that you can see the list of students and that you can add and delete students using the Redux store.
-
+   
 ---
-
-This step-by-step guide provides detailed instructions for setting up and integrating Redux with a Next.js application using TypeScript. Follow these steps to manage student data effectively.
