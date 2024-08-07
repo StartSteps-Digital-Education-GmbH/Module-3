@@ -25,14 +25,14 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 ### Define Student Interface (IStudent):
 
 1. **Create the `interfaces.ts` File:**
-   - In the `src` folder of your project, create a new file named `interfaces.ts`.
+   - In the `app` folder of your project, create a new file named `interfaces.ts`.
 
 2. **Define the `IStudent` Interface:**
    - Inside the `interfaces.ts` file, define an interface named `IStudent` with properties for `id`, `name`, and `hobby`.
 
 ### Create Redux Actions (addStudent and deleteStudent):
 
-3. **In the `src/store` folder, create a new file named `actions.ts`.**
+3. **Create `app/store` folder, create a new file named `actions.ts`.**
   
     >  **Explanation**: The Redux store is the central repository for all the state in a Redux application. It holds the entire state tree of the application. The store provides methods for:
     > - Getting the State: You can retrieve the current state of the application.
@@ -67,7 +67,7 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 ### Create Redux Reducer (reducer.ts):
 
 1. **Create the `reducer.ts` File:**
-   - In the `src/store` folder, create a new file named `reducer.ts`.
+   - In the `app/store` folder, create a new file named `reducer.ts`.
 
 2. **Implement the Reducer Function:**
    > - **What is a Reducer?:** A reducer is a function that takes the current state and an action as arguments and returns a new state. It specifies how the state should change in response to an action.
@@ -91,11 +91,14 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 ## Step 4: Configure Redux Store and Provider
 
-### Configure Redux Store and Provider:
+> - **Store Wrapper Component**: This component is responsible for wrapping your application (or part of it) with the Redux store. By using a wrapper component, you ensure that all child components have access to the Redux store and can interact with it.
+> - **Provider**: The `Provider` component is a special component provided by `react-redux`. It makes the Redux store available to any nested components that need to access the Redux store. The `Provider` component takes a store prop, which is the Redux store created using `configureStore` (or `createStore` in a traditional setup).
+> - _Why Use It_ : Using the `Provider` ensures that your components can connect to the Redux store using the connect function or `useSelector` and `useDispatch` hooks. Without the `Provider`, your components would not have access to the Redux store.
+
 
 1. **Install Redux and React-Redux:**
    - Run the command to install Redux and React-Redux.
-   - Command: `npm install redux react-redux`
+   - Command: `npm install @reduxjs/toolkit react-redux`
 
 2. **Create the `store.ts` File:**
    - In the `src/store` folder, create a new file named `store.ts`.
@@ -104,14 +107,14 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
    > - **What is a Store?:** The store holds the state of the application and provides methods to access and update the state.
    > - **Why Use It?:** The store centralizes the state, making it easier to manage and debug.
 
-   - **Step-by-Step:**
+   - **Step-by-Step:** (Look at nextjs-typescript-redux example in week 13 from the morning)
      - **Create the Store:**
-       - Inside the `store.ts` file, create the Redux store by calling the `createStore` function and passing the reducer to it.
+       - Inside the `store.ts` file, create the Redux store using Redux Toolkit's `configureStore` function. 
+     - **Wrap the App Component:**
+       - Define a `StoreWrapper` component that takes `children` as props and wraps them with the Redux `Provider`.
+       - Pass the configured store to the `Provider` component to make the Redux store available to all nested components.
      - **Export the Store:**
        - Export the configured store for use in the Next.js app.
-     - **Wrap the App Component:**
-       - In your `pages/_app.tsx` file, import the `Provider` component from `react-redux` and the store you created.
-       - Wrap your `App` component with the `Provider` component and pass the store as a prop.
 
 ---
 
@@ -120,7 +123,7 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 ### Create Component (StudentList.tsx):
 
 1. **Create the `StudentList.tsx` File:**
-   - In the `src/components` folder, create a new file named `StudentList.tsx`.
+   - Create the `app/components` folder, create a new file named `StudentList.tsx`.
 
 2. **Implement the `StudentList` Component:**
    > - **What is a Component?:** A component is a reusable piece of the UI that can have its own state and logic.
@@ -148,13 +151,15 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 ---
 
-## Step 6: Display the Student List in Next.js Page
+## Step 6: Set up the Main Page
 
-### Modify `app/page.tsx` to Use Redux:
+### Modify `app/page.tsx` to implement the `home` Component:
+> - **What is a Main Page Component?**: The main page component is the entry point for your application, typically the home page where you display the primary content.
+> - _Why Use It?_: This component serves as the central place to render your UI, integrating all parts of the application.
 
 1. **Import and Use the Connected `StudentList` Component:**
    - In your `pages/index.tsx` file, import the `StudentList` component.
-   - create a default functional Home component and render the StudentList component in there.
+   - Define a functional component `Home` and render the StudentList component in there.
 
 2. **Verify Everything is Working:**
    - Run the development server using `npm run dev`.
