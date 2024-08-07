@@ -38,6 +38,7 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
     > - Getting the State: You can retrieve the current state of the application.
     > - Dispatching Actions: You can dispatch actions to update the state.
     > - Subscribing to Changes: You can subscribe to state changes, allowing you to react to state updates.
+    > 
     > The Redux store is created using the createStore function, which takes a reducer as an argument. The reducer specifies how the state changes in response to actions.
 
 4. **Define Actions to Add and Delete Students:**
