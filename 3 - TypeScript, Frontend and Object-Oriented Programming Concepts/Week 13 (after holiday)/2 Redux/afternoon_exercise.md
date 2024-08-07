@@ -34,7 +34,7 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 3. **In the `src/store` folder, create a new file named `actions.ts`.**
   
-    >  **Explanation**: The Redux store is the central repository for all the state in a Redux application. It holds the entire state tree of the application, making it a single source of truth for the state. The store provides methods for:
+    >  **Explanation**: The Redux store is the central repository for all the state in a Redux application. It holds the entire state tree of the application. The store provides methods for:
     > - Getting the State: You can retrieve the current state of the application.
     > - Dispatching Actions: You can dispatch actions to update the state.
     > - Subscribing to Changes: You can subscribe to state changes, allowing you to react to state updates.
