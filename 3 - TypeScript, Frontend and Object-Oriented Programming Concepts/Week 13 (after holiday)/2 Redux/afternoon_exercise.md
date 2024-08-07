@@ -17,6 +17,7 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 ### Run the Development Server:
    - Command: `npm run dev`
+
 ---
 
 ## Step 2: Define Student Interface and Actions
@@ -88,7 +89,33 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 ---
 
-## Step 4: Connect Redux to Next.js Components
+## Step 4: Configure Redux Store and Provider
+
+### Configure Redux Store and Provider:
+
+1. **Install Redux and React-Redux:**
+   - Run the command to install Redux and React-Redux.
+   - Command: `npm install redux react-redux`
+
+2. **Create the `store.ts` File:**
+   - In the `src/store` folder, create a new file named `store.ts`.
+
+3. **Configure the Redux Store:**
+   > - **What is a Store?:** The store holds the state of the application and provides methods to access and update the state.
+   > - **Why Use It?:** The store centralizes the state, making it easier to manage and debug.
+
+   - **Step-by-Step:**
+     - **Create the Store:**
+       - Inside the `store.ts` file, create the Redux store by calling the `createStore` function and passing the reducer to it.
+     - **Export the Store:**
+       - Export the configured store for use in the Next.js app.
+     - **Wrap the App Component:**
+       - In your `pages/_app.tsx` file, import the `Provider` component from `react-redux` and the store you created.
+       - Wrap your `App` component with the `Provider` component and pass the store as a prop.
+
+---
+
+## Step 5: Connect Redux to Next.js Components
 
 ### Create Component (StudentList.tsx):
 
@@ -121,23 +148,18 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
 
 ---
 
-## Step 5: Connect Redux to the Next.js App
+## Step 6: Display the Student List in Next.js Page
 
-### Wrap the App with Provider:
+### Modify `pages/index.tsx` to Use Redux:
 
-1. **Install Redux and React-Redux:**
-   - Run the command to install Redux and React-Redux.
-   - Command: `npm install redux react-redux`
+1. **Import and Use the Connected `StudentList` Component:**
+   - In your `pages/index.tsx` file, import the `StudentList` component and use it within the component.
 
-2. **Create the `store.ts` File:**
-   - In the `src/store` folder, create a new file named `store.ts`.
+2. **Verify Everything is Working:**
+   - Run the development server using `npm run dev`.
+   - Open your browser and navigate to `http://localhost:3000`.
+   - Verify that you can see the list of students and that you can add and delete students using the Redux store.
 
-3. **Configure the Redux Store:**
-   > - **What is a Store?:** The store holds the state of the application and provides methods to access and update the state.
-   > - **Why Use It?:** The store centralizes the state, making it easier to manage and debug.
+---
 
-   - **Step-by-Step:**
-     - **Create the Store:**
-       - Inside the `store.ts` file, create the Redux store by calling the `createStore` function and passing the reducer to it.
-     - **Export the Store:**
-       - Export the configured store for use in the 
+This step-by-step guide provides detailed instructions for setting up and integrating Redux with a Next.js application using TypeScript. Follow these steps to manage student data effectively.
