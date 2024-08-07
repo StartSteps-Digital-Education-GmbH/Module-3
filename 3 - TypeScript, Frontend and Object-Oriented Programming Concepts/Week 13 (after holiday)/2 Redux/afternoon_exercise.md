@@ -69,8 +69,8 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
    - In the `src/store` folder, create a new file named `reducer.ts`.
 
 2. **Implement the Reducer Function:**
-   - **What is a Reducer?:** A reducer is a function that takes the current state and an action as arguments and returns a new state. It specifies how the state should change in response to an action.
-   - **Why Use It?:** Reducers help manage the state in a predictable way by defining how actions transform the state.
+   > - **What is a Reducer?:** A reducer is a function that takes the current state and an action as arguments and returns a new state. It specifies how the state should change in response to an action.
+   > - **Why Use It?:** Reducers help manage the state in a predictable way by defining how actions transform the state.
 
    - **Step-by-Step:**
      - **Import the StudentAction and IStudent Interfaces:**
@@ -96,8 +96,8 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
    - In the `src/components` folder, create a new file named `StudentList.tsx`.
 
 2. **Implement the `StudentList` Component:**
-   - **What is a Component?:** A component is a reusable piece of the UI that can have its own state and logic.
-   - **Why Use It?:** Components help break down the UI into smaller, manageable pieces.
+   > - **What is a Component?:** A component is a reusable piece of the UI that can have its own state and logic.
+   > - **Why Use It?:** Components help break down the UI into smaller, manageable pieces.
 
    - **Step-by-Step:**
      - **Define the Component:**
@@ -133,8 +133,8 @@ In this task, you will use TypeScript, Redux, and Next.js to manage students. Yo
    - In the `src/store` folder, create a new file named `store.ts`.
 
 3. **Configure the Redux Store:**
-   - **What is a Store?:** The store holds the state of the application and provides methods to access and update the state.
-   - **Why Use It?:** The store centralizes the state, making it easier to manage and debug.
+   > - **What is a Store?:** The store holds the state of the application and provides methods to access and update the state.
+   > - **Why Use It?:** The store centralizes the state, making it easier to manage and debug.
 
    - **Step-by-Step:**
      - **Create the Store:**
