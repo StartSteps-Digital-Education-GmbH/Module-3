@@ -82,8 +82,28 @@ Set up the utility functions to fetch data from Weather API
    - **Create API Fetching Utility:**
      1. In the `utils` folder, create a new file named `api.ts`.
      2. Define a function named `fetchWeather`.
-     3. Add the code to handle API requests to the OpenWeatherMap API using the Fetch API.
-     4. Include your API key and the city parameter in the request URL.
+     3. Add the code to handle API requests to the OpenWeatherMap API using the Fetch API or axios library. (Include your API key and the city parameter in the request URL.)
+
+        > To know how to format the URL and what to include in your request to an API, you should refer to the API's documentation. API documentation provides detailed information on how to interact with the API, including the endpoints, query parameters, request formats, and response formats.
+    >
+    > **Query parameters** are key-value pairs that are appended to the end of a URL to pass additional information to the server. They are used to specify details or parameters for the request. Query parameters are typically used to filter results, sort data, specify formats, or provide other specific details needed by the server to process the request.
+    > - Query parameters are added to the URL after a question mark (?).
+    > - Each parameter is represented as a key-value pair, and multiple parameters are separated by ampersands (&).
+    > - Basic structure:
+    >   ```http://example.com/api/resource?key1=value1&key2=value2&key3=value3```
+    >         - key1, key2, key3: These are the names of the parameters.
+    >         - value1, value2, value3: These are the corresponding values for the parameters.
+      
+      
+         > **Explanation when using AXIOS library**:
+         > - `const` is a keyword used to declare a constant variable. The variable will store the result of the HTTP request.
+         > -  `await` is used to pause the execution of the async function until the promise is resolved. It makes the code wait for the HTTP request to complete and get the result.
+         > -   'axios.get' is a method from the Axios library used to make a GET request to a specified URL.
+         > -   the URL consists of the baseURL and extra parameters. APIs require certain parameters to be included in your request. Parameters can be mandatory or optional. The documentation will specify which parameters are needed. For OpenWeatherMap, the parameters might include:
+         >       -   `q`: The city name (mandatory)
+         >       -   `appid`: Your API key (mandatory)
+         >       -   `units`: The unit of measurement (optional, e.g., metric for Celsius)
+         >  - Based on the endpoint and the required parameters, construct your URL. Use query parameters to pass the necessary data.
 
 > **Explanation:** 
 > - **Utility Functions:** Utility functions are helper functions that perform a specific task and can be reused across different parts of your application. In this case, the utility function `fetchWeather` handles the API request to get weather data.
@@ -124,7 +144,24 @@ Fetch and display the current time for a specific timezone in Europe using the W
 
 1. **Create Time API Fetching Utility:**
    1. In the `utils/api.ts` file, define a function named `fetchTime`.
-   2. Add the code to make a GET request to the WorldTimeAPI using the Fetch API.
+   2. Add the code to make a GET request to the WorldTimeAPI using the Fetch API or axios libary.
+  
+    > To know how to format the URL and what to include in your request to an API, you should refer to the API's documentation. API documentation provides detailed information on how to interact with the API, including the endpoints, query parameters, request formats, and response formats.
+    >
+    > **Query parameters** are key-value pairs that are appended to the end of a URL to pass additional information to the server. They are used to specify details or parameters for the request. Query parameters are typically used to filter results, sort data, specify formats, or provide other specific details needed by the server to process the request.
+    > - Query parameters are added to the URL after a question mark (?).
+    > - Each parameter is represented as a key-value pair, and multiple parameters are separated by ampersands (&).
+    > - Basic structure:
+    >   ```http://example.com/api/resource?key1=value1&key2=value2&key3=value3```
+    >         - key1, key2, key3: These are the names of the parameters.
+    >         - value1, value2, value3: These are the corresponding values for the parameters.
+      
+         > **Explanation when using AXIOS library**:
+         > - `const` is a keyword used to declare a constant variable. The variable will store the result of the HTTP request.
+         > -  `await` is used to pause the execution of the async function until the promise is resolved. It makes the code wait for the HTTP request to complete and get the result.
+         > -   'axios.get' is a method from the Axios library used to make a GET request to a specified URL.
+         > -   the URL consists of the baseURL and extra parameters. APIs require certain parameters to be included in your request. Parameters can be mandatory or optional. The documentation will specify which parameters are needed. 
+         >  - Based on the endpoint and the required parameters, construct your URL. Use query parameters to pass the necessary data.
 
 > **Explanation:** 
 > - The WorldTimeAPI does not require an API key, making it simpler to access the time data. This function makes a GET request to the WorldTimeAPI to fetch the current time for a specific timezone.
@@ -162,8 +199,25 @@ Fetch and display a random joke using the JokeAPI.
 
 1. **Create Joke API Fetching Utility:**
    1. In the `utils/api.ts` file, define a function named `fetchJoke`.
-   2. Add the code to make a GET request to the JokeAPI using the Fetch API.
+   2. Add the code to make a GET request to the JokeAPI using the Fetch API or axios library
 
+         > To know how to format the URL and what to include in your request to an API, you should refer to the API's documentation. API documentation provides detailed information on how to interact with the API, including the endpoints, query parameters, request formats, and response formats.
+             >
+             > **Query parameters** are key-value pairs that are appended to the end of a URL to pass additional information to the server. They are used to specify details or parameters for the request. Query parameters are typically used to filter results, sort data, specify formats, or provide other specific details needed by the server to process the request.
+             > - Query parameters are added to the URL after a question mark (?).
+             > - Each parameter is represented as a key-value pair, and multiple parameters are separated by ampersands (&).
+             > - Basic structure:
+             >   ```http://example.com/api/resource?key1=value1&key2=value2&key3=value3```
+             >         - key1, key2, key3: These are the names of the parameters.
+             >         - value1, value2, value3: These are the corresponding values for the parameters.
+               
+                  > **Explanation when using AXIOS library**:
+                  > - `const` is a keyword used to declare a constant variable. The variable will store the result of the HTTP request.
+                  > -  `await` is used to pause the execution of the async function until the promise is resolved. It makes the code wait for the HTTP request to complete and get the result.
+                  > -   'axios.get' is a method from the Axios library used to make a GET request to a specified URL.
+                  > -   the URL consists of the baseURL and extra parameters. APIs require certain parameters to be included in your request. Parameters can be mandatory or optional. The documentation will specify which parameters are needed. 
+                  >  - Based on the endpoint and the required parameters, construct your URL. Use query parameters to pass the necessary data.
+         
 > **Explanation:** 
 > - The JokeAPI does not require an API key, allowing you to easily access joke data. This function makes a GET request to the JokeAPI to fetch a random joke.
 
