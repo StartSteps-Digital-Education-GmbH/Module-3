@@ -15,9 +15,10 @@ const initialState: ArticleState = {
 
 const reducer = (
     state: ArticleState = initialState,
-    action: ArticleAction
+    action: ArticleAction //the data that we pass to dispatch function
 ): ArticleState => {
-    switch (action.type) {
+
+    switch (action.type) { //if(action.type === "ADD_ARTICLE")
         case "ADD_ARTICLE":
             const newArticle: IArticle = {
                 id: Math.random(),
@@ -27,16 +28,33 @@ const reducer = (
             return {
                 ...state,
                 articles: state.articles.concat(newArticle),
-            };
+            }; //returning the new updated state which contains the new added article
         case "REMOVE_ARTICLE":
             const updatedArticles: IArticle[] = state.articles.filter(
                 (article) => article.id !== action.article.id
             );
             return {
                 ...state, articles: updatedArticles,
-            };
+            }; //returning the new updated state which contains and the article is removed
+        case "UPDATE_ARTICLE":
+            console.log(action);
+            const updatedArticle = state.articles.map((article) => {
+                if (article.id === action.article.id) {
+                    return action.article // the new updated data that we send throw dispath
+                }
+                return article;
+            });
+            console.log(updatedArticle);
+            return {
+                ...state, articles: updatedArticle
+            }
+
     }
     return state;
 }
 
 export default reducer
+
+const arr =[1,2,3,4]
+const arr2 = arr;
+arr2[2] = 100

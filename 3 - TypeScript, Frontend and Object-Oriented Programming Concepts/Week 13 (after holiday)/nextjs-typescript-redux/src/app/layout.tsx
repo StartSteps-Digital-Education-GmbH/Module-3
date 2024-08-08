@@ -1,4 +1,4 @@
-import StoreWrapper from "../../store/store";
+import StoreWrapper from "../store/store";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

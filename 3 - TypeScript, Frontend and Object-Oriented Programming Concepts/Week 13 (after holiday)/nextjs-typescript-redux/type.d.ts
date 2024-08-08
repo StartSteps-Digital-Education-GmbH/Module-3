@@ -14,7 +14,12 @@ interface RemoveArticleAction {
     article: IArticle;
 }
 
-type ArticleAction = AddArticleAction | RemoveArticleAction;
+interface UpdateArticleAction {
+    type: "UPDATE_ARTICLE";
+    article: IArticle;
+}
+
+type ArticleAction = AddArticleAction | RemoveArticleAction | UpdateArticleAction;
 
 interface ArticleState {
     articles: IArticle[];

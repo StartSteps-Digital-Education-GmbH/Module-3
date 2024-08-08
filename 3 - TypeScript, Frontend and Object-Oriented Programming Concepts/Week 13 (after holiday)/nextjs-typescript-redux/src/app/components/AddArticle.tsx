@@ -6,7 +6,7 @@ type Props = {
 }
 
 export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
-    const [article, setArticle] = React.useState<IArticle | null>()
+    const [article, setArticle] = React.useState<IArticle | null>() //local state
 
     const handleArticleData = (e: React.FormEvent<HTMLInputElement>) => {
         setArticle({
@@ -26,13 +26,15 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
                 type='text'
                 id='title'
                 placeholder='Title'
-                onChange={handleArticleData}
+                onChange={handleArticleData} //controlled Inputs
+                value={article?.title}
             />
             <input
                 type='text'
                 id='body'
                 placeholder='Body'
-                onChange={handleArticleData}
+                onChange={handleArticleData} //controlled Inputs
+                value={article?.body}
             />
             <button onClick={addNewArticle}>Add article</button>
         </form>
