@@ -91,8 +91,8 @@ Set up the utility functions to fetch data from Weather API
           > - Each parameter is represented as a key-value pair, and multiple parameters are separated by ampersands (&).
           > - Basic structure:
           >   ```http://example.com/api/resource?key1=value1&key2=value2&key3=value3```
-          >         - key1, key2, key3: These are the names of the parameters.
-          >         - value1, value2, value3: These are the corresponding values for the parameters.
+          >   - key1, key2, key3: These are the names of the parameters.
+          >   - value1, value2, value3: These are the corresponding values for the parameters.
          
       
          > **Explanation when using AXIOS library**:
