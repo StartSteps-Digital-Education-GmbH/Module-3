@@ -18,6 +18,7 @@ Initialize a Next.js project and organize the file structure for better code man
    - This command sets up a new Next.js application in a folder and changes the current directory to that folder.
 
 > **Explanation:** 
+> - **Utility Functions:** Utility functions are helper functions that perform a specific task and can be reused across different parts of your application. In this case, the utility function `fetchWeather` handles the API request to get weather data.
 > - Initializing the project sets up the basic structure and dependencies needed for your Next.js application.
 
 2. **Organize the File Structure:**
@@ -70,7 +71,6 @@ Use Weather API and set up the utility functions to fetch data from is API.
      1. In the `utils` folder, create a new file named `api.ts`.
      2. Define a function named `fetchWeather`.
      3. Add the code to handle API requests to the OpenWeatherMap API inside this function.
-     4. Make sure to include your API key and the city parameter in the request URL.
 
 > **Explanation:** 
 > - Creating a separate file for API requests keeps the code organized and reusable.
