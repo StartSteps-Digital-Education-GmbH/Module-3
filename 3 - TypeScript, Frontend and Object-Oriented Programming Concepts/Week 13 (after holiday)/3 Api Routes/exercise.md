@@ -70,8 +70,7 @@ Use Weather API and set up the utility functions to fetch data from is API.
      1. In the `utils` folder, create a new file named `api.ts`.
      2. Define a function named `fetchWeather`.
      3. Add the code to handle API requests to the OpenWeatherMap API inside this function.
-     4. Use the `axios` library to make the API request.
-     5. Make sure to include your API key and the city parameter in the request URL.
+     4. Make sure to include your API key and the city parameter in the request URL.
 
 > **Explanation:** 
 > - Creating a separate file for API requests keeps the code organized and reusable.
@@ -112,7 +111,6 @@ Fetch and display the current time for a specific timezone in Europe using the W
 1. **Create Time API Fetching Utility:**
    1. In the `utils/api.ts` file, define a function named `fetchTime`.
    2. Add the code to make a GET request to the WorldTimeAPI.
-   3. Use the `axios` library to make the API request.
 
 > **Explanation:** 
 > - This function makes a GET request to the WorldTimeAPI to fetch the current time for a specific timezone.
@@ -151,7 +149,6 @@ Fetch and display a random joke using the JokeAPI.
 1. **Create Joke API Fetching Utility:**
    1. In the `utils/api.ts` file, define a function named `fetchJoke`.
    2. Add the code to make a GET request to the JokeAPI.
-   3. Use the `axios` library to make the API request.
 
 > **Explanation:** 
 > - This function makes a GET request to the JokeAPI to fetch a random joke.
