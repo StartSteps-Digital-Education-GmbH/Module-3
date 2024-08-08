@@ -64,10 +64,10 @@ Initialize a Next.js project and organize the file structure for better code man
 
 ---
 
-## Task 2: Choose and Set Up APIs
+## Task 2: Weather API
 
 ### Objective:
-Choose from three APIs (Weather API, Time API for Europe, Joke API) and set up the utility functions to fetch data from these APIs.
+Set up the utility functions to fetch data from Weather API
 
 ### Instructions:
 
