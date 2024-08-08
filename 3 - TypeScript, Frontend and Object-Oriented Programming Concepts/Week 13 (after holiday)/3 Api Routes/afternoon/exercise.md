@@ -27,8 +27,8 @@ Initialize a Next.js project and organize the file structure for better code man
 > **Explanation:** 
 > - Initializing the project sets up the basic structure and dependencies needed for your Next.js application.
 
-2. **Organize the File Structure:**
-   - Inside the project directory, create the following folder structure:
+**Organize the File Structure:**
+   - The project directory will loke somewhat like this:
      ```
      my-nextjs-app/
      ├── app/
