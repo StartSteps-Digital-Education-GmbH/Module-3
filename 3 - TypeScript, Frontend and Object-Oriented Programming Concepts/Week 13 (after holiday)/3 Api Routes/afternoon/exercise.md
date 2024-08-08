@@ -3,6 +3,9 @@
 ## Full-Stack Media Tech Program
 ### Week 13, Exercise Materials
 
+## Introduction
+In this task, you will use TypeScript and Next.js to fetch data from various APIs and display it in your application. You'll set up API utilities, create components to display the data, and integrate them into a Next.js application.
+
 ---
 
 ## Task 1: Set Up the Project Structure
@@ -14,15 +17,14 @@ Initialize a Next.js project and organize the file structure for better code man
 
 1. **Initialize the Next.js Project:**
    - Open the terminal application on your computer.
-   - Run the following command to create a new Next.js project.
+   - Run the following command to create a new Next.js project:
      ```sh
      npx create-next-app@latest my-nextjs-app --typescript
      cd my-nextjs-app
      ```
-   - This command sets up a new Next.js application in a folder and changes the current directory to that folder.
+   - This command sets up a new Next.js application in a folder named `my-nextjs-app` and changes the current directory to that folder.
 
 > **Explanation:** 
-> - **Utility Functions:** Utility functions are helper functions that perform a specific task and can be reused across different parts of your application. In this case, the utility function `fetchWeather` handles the API request to get weather data.
 > - Initializing the project sets up the basic structure and dependencies needed for your Next.js application.
 
 2. **Organize the File Structure:**
@@ -62,21 +64,29 @@ Initialize a Next.js project and organize the file structure for better code man
 
 ---
 
-## Task 2: Weather API
+## Task 2: Choose and Set Up APIs
 
 ### Objective:
-Use Weather API and set up the utility functions to fetch data from is API.
+Choose from three APIs (Weather API, Time API for Europe, Joke API) and set up the utility functions to fetch data from these APIs.
 
 ### Instructions:
 
 1. **Weather API:**
+   - **Sign Up and Get API Key:**
+     1. Go to the OpenWeatherMap website and sign up for an account.
+     2. Obtain an API key from the OpenWeatherMap dashboard.
+
+> **Explanation:** 
+> - The API key is required to authenticate your requests to the OpenWeatherMap API. Without an API key, you will not be able to access the weather data.
 
    - **Create API Fetching Utility:**
      1. In the `utils` folder, create a new file named `api.ts`.
      2. Define a function named `fetchWeather`.
-     3. Add the code to handle API requests to the OpenWeatherMap API inside this function.
+     3. Add the code to handle API requests to the OpenWeatherMap API using the Fetch API.
+     4. Include your API key and the city parameter in the request URL.
 
 > **Explanation:** 
+> - **Utility Functions:** Utility functions are helper functions that perform a specific task and can be reused across different parts of your application. In this case, the utility function `fetchWeather` handles the API request to get weather data.
 > - Creating a separate file for API requests keeps the code organized and reusable.
 
 2. **Create Weather Component:**
@@ -91,8 +101,8 @@ Use Weather API and set up the utility functions to fetch data from is API.
 
 > **Explanation:** 
 > - Using components helps in creating reusable and modular code.
-> - The `useState` hook is used to manage state within the component.
-> - The `useEffect` hook is used to perform side effects in the component, such as fetching data.
+> - **useState Hook:** The `useState` hook is used to manage state within the component. It allows you to add state to functional components.
+> - **useEffect Hook:** The `useEffect` hook is used to perform side effects in the component, such as fetching data when the component mounts.
 
 3. **Create Weather Page:**
    1. In the `app/weather` folder, create a new file named `page.tsx`.
@@ -114,10 +124,10 @@ Fetch and display the current time for a specific timezone in Europe using the W
 
 1. **Create Time API Fetching Utility:**
    1. In the `utils/api.ts` file, define a function named `fetchTime`.
-   2. Add the code to make a GET request to the WorldTimeAPI.
+   2. Add the code to make a GET request to the WorldTimeAPI using the Fetch API.
 
 > **Explanation:** 
-> - This function makes a GET request to the WorldTimeAPI to fetch the current time for a specific timezone.
+> - The WorldTimeAPI does not require an API key, making it simpler to access the time data. This function makes a GET request to the WorldTimeAPI to fetch the current time for a specific timezone.
 
 2. **Create Time Component:**
    1. In the `components` folder, create a new file named `TimeComponent.tsx`.
@@ -152,10 +162,10 @@ Fetch and display a random joke using the JokeAPI.
 
 1. **Create Joke API Fetching Utility:**
    1. In the `utils/api.ts` file, define a function named `fetchJoke`.
-   2. Add the code to make a GET request to the JokeAPI.
+   2. Add the code to make a GET request to the JokeAPI using the Fetch API.
 
 > **Explanation:** 
-> - This function makes a GET request to the JokeAPI to fetch a random joke.
+> - The JokeAPI does not require an API key, allowing you to easily access joke data. This function makes a GET request to the JokeAPI to fetch a random joke.
 
 2. **Create Joke Component:**
    1. In the `components` folder, create a new file named `ThirdAPIComponent.tsx`.
