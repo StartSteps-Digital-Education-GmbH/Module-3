@@ -15,6 +15,10 @@ Initialize a Next.js project and organize the file structure for better code man
 1. **Initialize the Next.js Project:**
    - Open the terminal application on your computer.
    - Run the following command to create a new Next.js project.
+     ```sh
+     npx create-next-app@latest my-nextjs-app --typescript
+     cd my-nextjs-app
+     ```
    - This command sets up a new Next.js application in a folder and changes the current directory to that folder.
 
 > **Explanation:** 
