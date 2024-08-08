@@ -86,14 +86,14 @@ Set up the utility functions to fetch data from Weather API
 
         > To know how to format the URL and what to include in your request to an API, you should refer to the API's documentation. API documentation provides detailed information on how to interact with the API, including the endpoints, query parameters, request formats, and response formats.
     
-    > **Query parameters** are key-value pairs that are appended to the end of a URL to pass additional information to the server. They are used to specify details or parameters for the request. Query parameters are typically used to filter results, sort data, specify formats, or provide other specific details needed by the server to process the request.
-    > - Query parameters are added to the URL after a question mark (?).
-    > - Each parameter is represented as a key-value pair, and multiple parameters are separated by ampersands (&).
-    > - Basic structure:
-    >   ```http://example.com/api/resource?key1=value1&key2=value2&key3=value3```
-    >         - key1, key2, key3: These are the names of the parameters.
-    >         - value1, value2, value3: These are the corresponding values for the parameters.
-      
+       > **Query parameters** are key-value pairs that are appended to the end of a URL to pass additional information to the server. They are used to specify details or parameters for the request. Query parameters are typically used to filter results, sort data, specify formats, or provide other specific details needed by the server to process the request.
+       > - Query parameters are added to the URL after a question mark (?).
+       > - Each parameter is represented as a key-value pair, and multiple parameters are separated by ampersands (&).
+       > - Basic structure:
+       >   ```http://example.com/api/resource?key1=value1&key2=value2&key3=value3```
+       >         - key1, key2, key3: These are the names of the parameters.
+       >         - value1, value2, value3: These are the corresponding values for the parameters.
+         
       
          > **Explanation when using AXIOS library**:
          > - `const` is a keyword used to declare a constant variable. The variable will store the result of the HTTP request.
