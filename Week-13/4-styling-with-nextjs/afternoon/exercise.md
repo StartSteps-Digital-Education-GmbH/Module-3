@@ -11,8 +11,6 @@ In this set of exercises, you will learn how to enhance the visual appeal of you
 Before continuing, please head over to the Tailwind website to see all the UI elements and components that you can use:
 [https://tailwindui.com/components#product-application-ui](https://tailwindui.com/components#product-application-ui)
 
-#### **Important Note:** If you didn't finish the WeatherComponent exercise from yesterday, you can access the solution directly from our GitHub repository. Follow the instructions at the end of this file to get the solution in your own VSCode and bootcamp repo.
-
 ---
 
 ## Task 1: Set Up Tailwind CSS
