@@ -14,6 +14,7 @@
 ## Types, Variables & Our Initial Commit
 **Variables**: Containers for storing data values. In TypeScript, you can define variables with specific types.
 _Why use it?_: Variables store data that can be used and manipulated throughout your code.
+
 **Types**: Define the kind of data you can use. For example, `string`, `number`, `boolean`.
 ```typescript
 let name: string = 'John'; // 'name' is a string variable
